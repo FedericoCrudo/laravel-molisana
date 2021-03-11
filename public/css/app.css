@@ -30,15 +30,51 @@ header .menu ul li a {
 header .menu ul li a:hover {
   background-color: #d7d3e0;
 }
+header .menu ul li .active {
+  background-color: #d7d3e0;
+}
 
 main {
   margin: 30px 0;
-  background-color: #DAEDF3;
+  background-color: #B7DAE5;
   font-family: Open Sans;
 }
 main .container {
   width: 1192px;
   margin: auto;
+}
+main .info-prodotto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+main .info-prodotto h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: inherit;
+  color: #404040;
+  padding-bottom: 10px;
+}
+main .info-prodotto .img-prodotto img {
+  width: 100%;
+}
+main .info-prodotto .description .desc {
+  color: #002D73;
+  font-size: 24px;
+  line-height: 30px;
+}
+main .info-prodotto .description .desc ol {
+  padding-left: 28px;
+  width: 100%;
+  margin: 10px 0;
+}
+main .info-prodotto .description .section-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  color: #002D73;
 }
 main .section-foto {
   height: 700px;
