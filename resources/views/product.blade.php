@@ -3,17 +3,27 @@
 
 @section('content')
 <div class="container">
- <div class="card-content">
-     @foreach($formati as $formato)
-        <div class="card">
-            <img src="{{$formato['src']}}" alt="">
-        
-            <div class="over">
-                <span>{{$formato['titolo']}}</span>
+ 
+     @foreach($formati as $key => $formato)
+    <div class="card-content">
+       <h2>{{$key}}</h2>
+       
+       <div class="wrapp">
+       @foreach($formato as $key=>$pasta)
+       
+            <div class="card">
+                <img src="{{$pasta['src']}}" alt="">
+            
+                <div class="over">
+                    <span><a href="{{ route('dettagli-prodotto',['id' => $key]) }}">{{$pasta['titolo']}}</a></span>
+                </div>
             </div>
-        </div>
+            @endforeach
+       </div>
+      
+     </div>       
       @endforeach
-    </div>
+    
     
 </div>
     
